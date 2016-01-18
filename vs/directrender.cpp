@@ -33,6 +33,9 @@ extern "C" {
 #include <VapourSynth.h>
 #include <VSHelper.h>
 
+#define PIX_FMT_YUV420P
+#define PIX_FMT_YUV422P
+
 int VSGetBuffer(AVCodecContext *avctx, AVFrame *pic, int flag)
 {
     VSData *userdata;
